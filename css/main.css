@@ -6,6 +6,7 @@ body {
 /* navbar */
 .navbar-custom {
   background-color: #f9f2d6;
+  font-size: 1.25em;
 }
 
 /* main */
@@ -20,10 +21,12 @@ body {
 
 h2.greeting-text {
   margin-bottom: 1em;
+  font-size: 5em;
 }
 
 h5.subgreeting-text {
-  max-width: 20em;
+  max-width: 15em;
+  font-size: 2em;
 }
 
 span.name-text {
