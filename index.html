@@ -12,10 +12,17 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <!-- navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-custom">
       <div class="container-fluid">
         <a class="navbar-brand px-5" href="./index.html">Joseph Sikowitz</a>
         <button
@@ -45,8 +52,50 @@
         </div>
       </div>
     </nav>
-    <main></main>
-    <footer></footer>
+    <!-- end navbar -->
+
+    <!-- main content -->
+    <main class="vh-100 main-custom">
+      <div class="container main-custom">
+        <!-- hidden h1, nav-brand will serve as title-->
+        <section class="visually-hidden">
+          <h1>Joseph Sikowitz - Homepage</h1>
+        </section>
+        <section>
+          <div class="row d-flex align-items-center">
+            <div class="col-12 col-lg-6 g-4">
+                  <h2 class="greeting-text">
+                    Hello, my name is
+                    <span class="name-text">Joseph Sikowitz</span>.
+                  </h2>
+                
+                  <h5 class="subgreeting-text">
+                    I am a librarian, historian, computer scientist, hiker, and
+                    more. Explore my site to learn about me.
+                  </h5>
+            </div>
+            <div class="col-12 col-lg-6 g-4">
+              <img
+                src="/img/Sikowitz-Dolomites-1.jpeg"
+                class="img-fluid front-img"
+                alt="Joseph Sikowitz hiking in Dolomites"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- end main-->
+
+    <!-- footer content-->
+    <footer
+      class="footer navbar navbar-expand-lg navbar-light fixed-bottom footer-custom"
+    >
+      <div class="container-fluid">
+        <p>&copy; Joseph Sikowitz</p>
+      </div>
+    </footer>
+    <!-- end footer-->
 
     <!-- CDN and local Javascript files-->
     <script
