@@ -1,0 +1,35 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "A homepage to display my professional and personal activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-sikowitz/homepage.git"
+  },
+  "keywords": [],
+  "author": "Joseph Sikowitz",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/joseph-sikowitz/homepage/issues"
+  },
+  "homepage": "https://github.com/joseph-sikowitz/homepage#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jest": "^29.16.6",
+    "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^17.12.0",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.9"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "unrs-resolver@1.12.2": true
+  }
+}
