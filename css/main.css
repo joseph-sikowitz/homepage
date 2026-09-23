@@ -1,6 +1,9 @@
 /* global */
 body {
   font-family: "Lobster", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* navbar */
@@ -10,13 +13,14 @@ body {
 }
 
 .navbar-nav > .nav-item > .nav-link.active,
-.navbar-nav > .nav-item > .nav-link:hover {
+.nav-link:hover {
   color: #116011;
 }
 
 /* main */
-.main-custom {
+main {
   background-color: #f9f2d6;
+  flex: 1 0 auto;
 }
 
 .front-img {
@@ -25,7 +29,7 @@ body {
 }
 
 h2.greeting-text {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-size: 5em;
 }
 
@@ -41,4 +45,5 @@ span.name-text {
 /* footer */
 .footer-custom {
   background-color: #f9f2d6;
+  font-size: 1.25em;
 }
