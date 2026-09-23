@@ -1,4 +1,36 @@
+/* global */
+body {
+  font-family: "Lobster", sans-serif;
+}
+
 /* navbar */
 .navbar-custom {
-    background-color: #f9f2d6;
+  background-color: #f9f2d6;
+}
+
+/* main */
+.main-custom {
+  background-color: #f9f2d6;
+}
+
+.front-img {
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+h2.greeting-text {
+  margin-bottom: 1em;
+}
+
+h5.subgreeting-text {
+  max-width: 20em;
+}
+
+span.name-text {
+  color: #116011;
+}
+
+/* footer */
+.footer-custom {
+  background-color: #f9f2d6;
 }
