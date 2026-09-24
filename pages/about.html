@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Sikowitz</title>
 
+    <!-- Required meta info -->
+    <meta name="author" content="Joseph Sikowitz" />
+    <meta
+      name="description"
+      content="Joseph Sikowitz's personal homepage — librarian, historian, and computer scientist."
+    />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+
     <!-- CDN and local stylesheets, Google fonts-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -56,32 +64,60 @@
 
     <!-- main content -->
     <main>
-      <div class="container main-custom">
+      <div class="container">
         <!-- hidden h1, nav-brand will serve as title-->
         <section class="visually-hidden">
-          <h1>Joseph Sikowitz - Homepage</h1>
+          <h1>Joseph Sikowitz - About</h1>
         </section>
         <section>
-          <div class="row d-flex align-items-center">
-            <div class="col-12 col-lg-6 g-4">
-                  <h2 class="greeting-text">
-                    Hello, my name is
-                    <span class="name-text">Joseph Sikowitz</span>.
-                  </h2>
-                
-                  <h5 class="subgreeting-text">
-                    I am a librarian, historian, computer scientist, hiker, and
-                    more. Explore my site to learn about me.
-                  </h5>
+          <div class="row">
+            <div class="col-12 col-lg-4 g-4"></div>
+            <div class="col-12 col-lg-4 g-4 text-center">
+              <div class="alert alert-info" role="alert">
+                Hover over the images to learn my story.
+              </div>
             </div>
-            <div class="col-12 col-lg-6 g-4">
-              <img
-                src="/img/dolomites-1.jpeg"
-                class="img-fluid front-img"
-                alt="Joseph Sikowitz hiking in Dolomites"
-              />
+            <div class="col-12 col-lg-4 g-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4 g-4">
+              <div class="card about-card mx-auto" id="capitol">
+                <img
+                  src="/img/washington-capitol.jpg"
+                  class="about-img"
+                  alt="US Capitol building"
+                />
+                <div class="card-img-overlay">
+                  <div class="card-text about-txt">
+                    I am originally from the Washington D.C. area. From an early
+                    age, I was fascinated by computers. I used to design my own
+                    levels in Duke Nukem 3D and play Warcraft with friends over
+                    a dial-up modem when I was a kid.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 g-4 text-center">
+              <div class="card about-card mx-auto" id="washingtonhall">
+                <img
+                  src="/img/washington-hall.jpg"
+                  class="about-img"
+                  alt="University of Maryland Washington Hall"
+                />
+                <div class="card-img-overlay">
+                  <div class="card-text about-txt">
+                    For my undergraduate degree, I went to the University of
+                    Maryland, College Park where I majored in environmental
+                    economics. After graduating, I took a year to work and then
+                    went back to Maryland to get a masters in information
+                    studies.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="row"></div>
         </section>
       </div>
     </main>
@@ -92,8 +128,15 @@
       class="footer navbar navbar-expand-lg navbar-light sticky-bottom footer-custom px-5"
     >
       <div class="container-fluid justify-content-start">
-        <a href="https://github.com/joseph-sikowitz" target="_blank" class="nav-link px-3">GitHub</a>
-        <a href="mailto:sikowitz.j@northeastern.edu" class="nav-link px-3">Email</a>
+        <a
+          href="https://github.com/joseph-sikowitz"
+          target="_blank"
+          class="nav-link px-3"
+          >GitHub</a
+        >
+        <a href="mailto:sikowitz.j@northeastern.edu" class="nav-link px-3"
+          >Email</a
+        >
       </div>
     </footer>
     <!-- end footer-->
@@ -104,6 +147,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
