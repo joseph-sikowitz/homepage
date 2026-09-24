@@ -42,6 +42,39 @@ span.name-text {
   color: #116011;
 }
 
+.about-card {
+  max-width: 35rem;
+  max-height: 35rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.about-img {
+  max-width: 35rem;
+  max-height: 35rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  transition: opacity 0.5s ease;
+}
+
+.about-txt {
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+
+.about-card:hover .about-txt {
+  opacity: 1;
+}
+
+.about-card:hover img {
+  opacity: 0.5;
+}
+
 /* footer */
 .footer-custom {
   background-color: #f9f2d6;
