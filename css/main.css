@@ -82,6 +82,21 @@ span.name-text {
 }
 
 /* travel */
+.countdown-title {
+  text-align: center;
+}
+
 .countdown-btn {
-  background-color:#116011;
+  background-color: #116011;
+}
+
+.countdownclock {
+  color: #116011;
+  margin-top: 1rem;
+  min-height: 3em;
+}
+
+.clock-panel {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
