@@ -82,8 +82,9 @@ span.name-text {
 }
 
 /* travel */
-.countdown-title {
+.travel-title {
   text-align: center;
+  text-decoration: underline;
 }
 
 .countdown-btn {

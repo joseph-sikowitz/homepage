@@ -58,18 +58,22 @@ function calculateTimeToTrip(trip) {
   //isolate number of seconds
   seconds = Math.floor(seconds % 60);
 
-  return (
-    tripInfo[1] +
-    "<br>" +
-    days.toString() +
-    " days " +
-    hours.toString() +
-    " hours " +
-    minutes.toString() +
-    " minutes " +
-    seconds.toString() +
-    " seconds"
-  );
+  if (days < 0) {
+    return "The trip is over and I had a great time!";
+  } else {
+    return (
+      tripInfo[1] +
+      "<br>" +
+      days.toString() +
+      " days " +
+      hours.toString() +
+      " hours " +
+      minutes.toString() +
+      " minutes " +
+      seconds.toString() +
+      " seconds"
+    );
+  }
 }
 
 /*
