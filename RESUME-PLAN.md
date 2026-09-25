@@ -66,6 +66,4 @@ education, and community roles.
 This document records the plan only. No site implementation changes have been
 made; implementation should begin only after approval.
 
-## Implementation Note
-
 
