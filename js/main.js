@@ -1,3 +1,10 @@
+/*
+  Function: getTrip
+    Returns a hardcoded date for a trip and the destination based
+    on the dropdown value.
+  Params: trip (string) -- value from dropdown menu.
+  Returns: array -- Date object, string.
+*/
 function getTrip(trip) {
   //trip datetimes
   let timeToTrip = "";
@@ -20,6 +27,13 @@ function getTrip(trip) {
   return [timeToTrip, destination];
 }
 
+/*
+  Function: calculateTimeToTrip
+    Based on the date of the trip, calculates and returns the
+    amount of time until the trip.
+  Params: trip (string) -- value from dropdown menu.
+  Returns: string -- countdown clock.
+*/
 function calculateTimeToTrip(trip) {
   //current datetime
   const datetime = new Date();
@@ -58,19 +72,33 @@ function calculateTimeToTrip(trip) {
   );
 }
 
+/*
+  Function: runCountDownClock
+    Sets the action listener for the dropdown menu items. The event that 
+    each menu item triggers is to start an interval clock that calculates
+    the time until the trip each second.
+  Params: none.
+  Returns: none.
+*/
 function runCountDownClock() {
+  //create interval var so that it can be reset
   let countdownInterval = null;
+
+  //add event listener for clicking on dropdown items
   document.querySelectorAll("#travellist .dropdown-item").forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
 
+      //clear interval var if present
       if (countdownInterval !== null) {
         clearInterval(countdownInterval);
       }
 
+      //clear current text and set new trip value
       document.getElementById("countdownclock").innerHTML = "";
       const trip = event.target.getAttribute("value");
 
+      //create and start new interval for clock, updating every second
       countdownInterval = setInterval(() => {
         const timeToTrip = calculateTimeToTrip(trip);
         document.getElementById("countdownclock").innerHTML = timeToTrip;
@@ -79,6 +107,7 @@ function runCountDownClock() {
   });
 }
 
+//check if on travel page and only run script if so
 const path = window.location.pathname;
 var page = path.split("/").pop();
 if (page === "travel.html") {
