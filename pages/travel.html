@@ -71,7 +71,7 @@
         </section>
         <section>
           <div class="row d-flex align-items-center">
-            <div class="col-12 col-lg-8 g-4">
+            <div class="col-12 col-lg-7 g-4">
               <h4 class="travel-title">Scroll to see my recent travels.</h4>
               <div
                 id="carouselIndicators"
@@ -160,7 +160,7 @@
                     aria-label="Slide 13"
                   ></button>
                 </div>
-                
+
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
@@ -249,7 +249,9 @@
                       alt="Sunset in Porto"
                     />
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Valley view of Malga Pramper, Dolomites, Italy, 2025</h5>
+                      <h5>
+                        Valley view of Malga Pramper, Dolomites, Italy, 2025
+                      </h5>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -320,46 +322,55 @@
               </div>
             </div>
 
+            <div class="col-12 col-lg-1 g-4"></div>
+
             <!-- countdown clock-->
-            <div
-              class="col-12 col-lg-4 g-4 border border-success border-3 clock-panel"
-            >
-              <h4 class="travel-title">Trip Countdown Clock</h4>
-              <h5>Select a trip to see long until I depart.</h5>
-              <div class="dropdown" id="travellist">
-                <button
-                  class="btn btn-secondary dropdown-toggle countdown-btn"
-                  type="button"
-                  id="dropdownTravelButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Upcoming Trips
-                </button>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="dropdownTravelButton"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#" value="dc"
-                      >Washington DC</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#" value="ct">Connecticut</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#" value="az">Arizona</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#" value="tmb"
-                      >Tour du Mont Blanc</a
-                    >
-                  </li>
-                </ul>
+            <div class="col-12 col-lg-4 g-4">
+            <div class="card resume-card shadow-sm h-100">
+              <div class="card-header">
+                <h2 class="resume-card-title h3 mb-0" id="presentations-title">
+                  Trip Countdown Clock
+                </h2>
               </div>
-              <div class="countdown-panel">
-                <div class="countdownclock" id="countdownclock"></div>
+              <div class="card-body">
+                <h5>Select a trip to see long until I depart.</h5>
+                <div class="dropdown" id="travellist">
+                  <button
+                    class="btn btn-secondary dropdown-toggle countdown-btn"
+                    type="button"
+                    id="dropdownTravelButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Upcoming Trips
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownTravelButton"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#" value="dc"
+                        >Washington DC</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" value="ct"
+                        >Connecticut</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" value="az">Arizona</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" value="tmb"
+                        >Tour du Mont Blanc</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="countdown-panel">
+                  <div class="countdownclock" id="countdownclock"></div>
+                </div>
               </div>
             </div>
           </div>
