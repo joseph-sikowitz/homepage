@@ -49,7 +49,8 @@ Joseph Sikowitz — [Homepage](#)
 
 ## Course
 
-[Web Development (Online), Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
+[Web Development (Online), Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/), Northeastern University.
+[John Alexis Guerra Gómez](https://johnguerra.co/), Instructor.
 
 ## Video Demo
 
