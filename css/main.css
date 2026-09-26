@@ -42,6 +42,13 @@ span.name-text {
   color: #116011;
 }
 
+/* footer */
+.footer-custom {
+  background-color: #f9f2d6;
+  font-size: 1.25em;
+}
+
+/* about page */
 .about-card {
   max-width: 35rem;
   max-height: 35rem;
@@ -75,12 +82,6 @@ span.name-text {
   opacity: 0.3;
 }
 
-/* footer */
-.footer-custom {
-  background-color: #f9f2d6;
-  font-size: 1.25em;
-}
-
 /* travel */
 .travel-title {
   text-align: center;
@@ -104,6 +105,19 @@ span.name-text {
 /* resume */
 .resume-content {
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.resume-card-shadow {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+@media (min-width: 992px) {
+  .resume-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .resume-ai-alert {
@@ -135,10 +149,14 @@ span.name-text {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.resume-section-nav {
+  display: flex;
+}
+
 @media print {
   body,
   main {
-    background: #fff !important;
+    background: #fff;
   }
 
   body {
@@ -149,33 +167,33 @@ span.name-text {
   .navbar,
   .footer,
   .resume-section-nav {
-    display: none !important;
+    display: none;
   }
 
-  .resume-content {
-    max-width: 100% !important;
-    padding: 0 !important;
+  body.resume-page .resume-content.container {
+    max-width: 100%;
+    padding: 0;
   }
 
-  .resume-card {
+  body.resume-page .resume-card {
     break-inside: avoid;
-    box-shadow: none !important;
-    border-color: #777 !important;
-    margin-bottom: 1rem !important;
+    box-shadow: none;
+    border-color: #777;
+    margin-bottom: 1rem;
   }
 
-  .resume-card > .card-header {
-    background: #fff !important;
-    color: #000 !important;
+  body.resume-page .resume-card > .card-header {
+    background: #fff;
+    color: #000;
   }
 
-  .resume-title,
-  .resume-card-title {
-    color: #000 !important;
+  body.resume-page .resume-title,
+  body.resume-page .resume-card-title {
+    color: #000;
   }
 
-  a {
-    color: #000 !important;
-    text-decoration: none !important;
+  body.resume-page a {
+    color: #000;
+    text-decoration: none;
   }
 }
