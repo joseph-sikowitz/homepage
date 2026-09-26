@@ -116,39 +116,39 @@ Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
 
 1. **Creation of the resume.html page.** I used **GitHub Copilot SDK** to create one page entirely as required by the project specifications. I asked it to create a plan (see [resume plan](/docs/RESUME-PLAN.md) before creating the page, but then had to have it iterate the plan as well as the page once it was created. After that point I made small edits to further fix issues. The prompts I used to create the plan and iterate through the issues it created are as follows.
 
-"I want you to think about what I'm asking as if you're a full stack web developer with 20 years of experience. Please only provide a plan-don't edit any files. I want you to come up with a plan for using hte data in the resume I have uploaded to make a resume page that integrates with the website that I have created in this project. It will be used in the /pages/resume.html page. It should match the aesthetics of the current site very closely and provide a clear way to read my resume. Again, don't implement anything until I agree that your plan works for me."
+- "I want you to think about what I'm asking as if you're a full stack web developer with 20 years of experience. Please only provide a plan-don't edit any files. I want you to come up with a plan for using hte data in the resume I have uploaded to make a resume page that integrates with the website that I have created in this project. It will be used in the /pages/resume.html page. It should match the aesthetics of the current site very closely and provide a clear way to read my resume. Again, don't implement anything until I agree that your plan works for me."
 
-"I've added my resume to this folder. Please proceed, but again, only in plan mode so you don't change anything."
+- "I've added my resume to this folder. Please proceed, but again, only in plan mode so you don't change anything."
 
-"Can you output this plan to a markdown file?"
+- "Can you output this plan to a markdown file?"
 
-"Still stay in plan mode. Can you make it so that each section is clearly deliniated with Bootstrap 5 tools?"
+- "Still stay in plan mode. Can you make it so that each section is clearly deliniated with Bootstrap 5 tools?"
 
-"Still stay in plan mode. Do not remove the footer email link. Append this to the plan."
+- "Still stay in plan mode. Do not remove the footer email link. Append this to the plan."
 
-"Still stay in plan mode. Do not add CSS directly to resume.html. Can you add it to css/main.css? Do not remove any of the existing CSS in main.css but add your CSS to it and set up the appropriate linking. Once you've done this, append a note about this change to the resume-plan."
+- "Still stay in plan mode. Do not add CSS directly to resume.html. Can you add it to css/main.css? Do not remove any of the existing CSS in main.css but add your CSS to it and set up the appropriate linking. Once you've done this, append a note about this change to the resume-plan."
 
-"Still stay in plan mode. Can you add a green Bootstrap alert at the top of the page that indicates that the page was generated with AI? Make the text of the alert, "This page created with generative AI."
+- "Still stay in plan mode. Can you add a green Bootstrap alert at the top of the page that indicates that the page was generated with AI? Make the text of the alert, "This page created with generative AI."
 
-"Still stay in plan mode. Can you add a green Bootstrap alert at the top of the page that indicates that the page was generated with AI? Make the text of the alert, "This page created with generative AI.""
+- "Still stay in plan mode. Can you add a green Bootstrap alert at the top of the page that indicates that the page was generated with AI? Make the text of the alert, "This page created with generative AI.""
 
-"Can you rewrite the /pages/resume.html page following this plan exactly? Do not write to any other files in the project!"
+- "Can you rewrite the /pages/resume.html page following this plan exactly? Do not write to any other files in the project!"
 
 2. **Troubleshooting GitHub Pages Deployment** I used **GitHub Copilot SDK** to figure out why images from my site were not displaying after initially deploying the page. There were two issues. One was that while the paths worked on my local machine, they were not formatted the way that GitHub Pages' environment would be able to find them. The second was that some of the file extensions were capitalized and not properly referenced in the HTML. I used the following prompt.
 
-"Three pictures from the Dolomites section of travel.html are not displaying in GitHub Pages. Can you tell me why? Do not make any changes!"
+- "Three pictures from the Dolomites section of travel.html are not displaying in GitHub Pages. Can you tell me why? Do not make any changes!"
 
 3. **Starting a Project README.md** I used **GitHub Copilot SDK** to get this README started. I did a lot of editing afterward though to get it to have the correct content. The prompt I used is as follows.
 
-"I want you to help me get started with the README for this project. Only modify the README.md file and nothing else. The README should have the following elements: project name, project objective, screenshot (in img folder currently), tech requirements, how to install/use, author with a link to the homepage (not public yet so I will add the link later), a reference to the class with a link (https://johnguerra.co/classes/webDevelopment_online_fall_2026/), a link to the video demo (not created yet so just have a placeholder), and what the creative addition to the project was (the trip countdown clock that I created from Javascript). Do all of this in correct GitHub Markdown."
+- "I want you to help me get started with the README for this project. Only modify the README.md file and nothing else. The README should have the following elements: project name, project objective, screenshot (in img folder currently), tech requirements, how to install/use, author with a link to the homepage (not public yet so I will add the link later), a reference to the class with a link (https://johnguerra.co/classes/webDevelopment_online_fall_2026/), a link to the video demo (not created yet so just have a placeholder), and what the creative addition to the project was (the trip countdown clock that I created from Javascript). Do all of this in correct GitHub Markdown."
 
 4. **Troubleshooting div Expansion with Javascript** I asked **Claude Sonnet 5** to help me troubleshoot a style issue. When my countdown clock appeared after selecting from the menu, it would push the surrounding div's spacing down. I wanted to figure out how to correct that. I used the following prompt.
 
-"How can I make it so when the text from the dropdown appears via Javascript, the rest of the box doesn't shift? I'm fine with having blank space to start. Tell me how to do it. Do not write a solution. I want to learn how to do it myself."
+- "How can I make it so when the text from the dropdown appears via Javascript, the rest of the box doesn't shift? I'm fine with having blank space to start. Tell me how to do it. Do not write a solution. I want to learn how to do it myself."
 
 ## Documentation and Demos
 
 - [Design Document](/docs/design-document.pdf)
 - [Google Slides](https://docs.google.com/presentation/d/159G4EYVJF27qTT-3annWVBwfdkwnY4LgsU-sRJ8zeAM/edit?usp=sharing)
-- Add slide presentation video here
-- Add page video demo here
+- [Presentation Video](https://youtu.be/l6LRfj7UV-I)
+- [Homepage Demo Video](https://youtu.be/QVfDI-chjqM)
