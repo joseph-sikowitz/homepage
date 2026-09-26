@@ -42,8 +42,8 @@ fits the existing site’s aesthetic and works well on desktop and mobile.
 9. **Keep resume styles in the shared stylesheet.** Store resume-specific CSS,
    including print styles, in `css/main.css`; link to that stylesheet from
    `pages/resume.html` and do not embed CSS in the page.
-10. **Add alert box at top of page.** At the user's request, a green Bootstrap 
-    success alert reading “This page created with generative AI.” will be added 
+10. **Add alert box at top of page.** At the user's request, a green Bootstrap
+    success alert reading “This page created with generative AI.” will be added
     near the top of `pages/resume.html`.
 
 ## Source CV Sections
@@ -65,5 +65,3 @@ education, and community roles.
 
 This document records the plan only. No site implementation changes have been
 made; implementation should begin only after approval.
-
-
