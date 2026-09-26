@@ -16,9 +16,26 @@ My personal homepage serves as a personal and professional introduction to me. T
 
 https://joseph-sikowitz.github.io/homepage/
 
-## Screenshot
+## Documentation and Demos
+
+- [Design Document](/docs/design-document.pdf)
+- [Google Slides](https://docs.google.com/presentation/d/159G4EYVJF27qTT-3annWVBwfdkwnY4LgsU-sRJ8zeAM/edit?usp=sharing)
+- [Presentation Video](https://youtu.be/l6LRfj7UV-I)
+- [Homepage Demo Video](https://youtu.be/QVfDI-chjqM)
+
+## Screenshots
 
 ![Screenshot of the homepage](./img/homepage-screenshot.gif)
+*Homepage*
+
+![Screenshot of the about page](./img/about-screenshot.gif)
+*About*
+
+![Screenshot of the resume page](./img/resume-screenshot.gif)
+*Resume*
+
+![Screenshot of the homepage](./img/travel-screenshot.gif)
+*Travel*
 
 ## Technologies and Requirements
 
@@ -29,8 +46,7 @@ https://joseph-sikowitz.github.io/homepage/
 - Google Fonts (Lobster)
 - A modern web browser
 - An internet connection to load Bootstrap and Google Fonts from their CDNs
-- A local static HTTP server to serve the site from the project root
-- node.js
+- node.js to install dependencies and run a local static HTTP server
 
 No package installation or build step is required to run the website.
 
@@ -85,7 +101,7 @@ homepage/
 ## Install and Use
 
 1. Clone this repository and open a terminal in the project directory.
-2. Install the needed development tools:
+2. Install the development tools (optional):
 
    ```bash
    npm install
@@ -101,16 +117,6 @@ homepage/
    be the default in your setup but use the port that is indicated.
 5. Use the navigation bar to visit the About, Resume, and Travel pages. On the Travel page, open the trip dropdown and select a destination to start its countdown clock.
 6. Stop the server with `Ctrl+C` when you are finished.
-
-## Author
-
-Joseph Sikowitz — [Homepage](https://joseph-sikowitz.github.io/homepage/)
-
-## Course
-
-Northeastern University, [Web Development (Online), Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/).
-
-Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
 
 ## Generative AI Usage
 
@@ -146,9 +152,16 @@ Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
 
 - "How can I make it so when the text from the dropdown appears via Javascript, the rest of the box doesn't shift? I'm fine with having blank space to start. Tell me how to do it. Do not write a solution. I want to learn how to do it myself."
 
-## Documentation and Demos
+## Course
 
-- [Design Document](/docs/design-document.pdf)
-- [Google Slides](https://docs.google.com/presentation/d/159G4EYVJF27qTT-3annWVBwfdkwnY4LgsU-sRJ8zeAM/edit?usp=sharing)
-- [Presentation Video](https://youtu.be/l6LRfj7UV-I)
-- [Homepage Demo Video](https://youtu.be/QVfDI-chjqM)
+Northeastern University, [Web Development (Online), Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/).
+
+Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
+
+## Author
+
+Joseph Sikowitz — [Homepage](https://joseph-sikowitz.github.io/homepage/)
+
+## License
+
+This project is licensed under the [MIT License](#license)---see the LICENSE file for details.
