@@ -6,7 +6,6 @@ The objective of this project was to design and implement a personal homepage us
 
 My personal homepage serves as a personal and professional introduction to me. The personal side is covered in the about and travel sections while my professional experience is displayed by my resume. It also contains links to my GitHub, Bluesky, and email address so that people interested in my experience can delve deeper. All pages were handmade by the author except for the resume page which was made with GitHub Copilot and then edited (see [Generative AI Usage](#generative-ai-usage) section for details).
 
-
 ## Creative Additions
 
 **Primary:** The Travel page includes a trip countdown clock built with JavaScript. Selecting a destination starts a live countdown showing the time remaining until departure.
@@ -26,27 +25,82 @@ https://joseph-sikowitz.github.io/homepage/
 - HTML5
 - CSS3
 - Vanilla JavaScript (ES modules)
-- Bootstrap 5.3.8, loaded from jsDelivr
+- Bootstrap 5.3.8
 - Google Fonts (Lobster)
 - A modern web browser
 - An internet connection to load Bootstrap and Google Fonts from their CDNs
 - A local static HTTP server to serve the site from the project root
+- node.js
 
 No package installation or build step is required to run the website.
+
+## File Structure
+
+```text
+homepage/
+├── css/
+│   └── main.css
+├── docs/
+│   ├── RESUME-PLAN.md
+│   └── design-document.pdf
+├── img/
+│   ├── block-island.jpg
+│   ├── boston-skyline.jpeg
+│   ├── corsica-1.jpg
+│   ├── corsica-2.JPG
+│   ├── corsica-3.jpg
+│   ├── corsica-4.jpg
+│   ├── corsica-5.jpg
+│   ├── dolomites-1.jpeg
+│   ├── dolomites-2.jpg
+│   ├── dolomites-3.JPG
+│   ├── dolomites-4.JPG
+│   ├── dolomites-5.JPG
+│   ├── favicon.ico
+│   ├── homepage-screenshot.gif
+│   ├── homepage-thumbnail.jpg
+│   ├── mardi-gras.jpg
+│   ├── pr-1.jpeg
+│   ├── pr-2.jpeg
+│   ├── pr-3.jpeg
+│   ├── pr-4.jpeg
+│   ├── vermont-winter.jpg
+│   ├── washington-capitol.jpg
+│   └── washington-hall.jpg
+├── js/
+│   └── main.js
+├── pages/
+│   ├── about.html
+│   ├── resume.html
+│   └── travel.html
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package.json
+├── README.md
+└── package-lock.json
+```
 
 ## Install and Use
 
 1. Clone this repository and open a terminal in the project directory.
-2. Start a static web server from the project root. For example, with node:
+2. Install the needed development tools:
+
+   ```bash
+   npm install
+   ```
+
+3. Start a static web server from the project root. For example, with node:
 
    ```bash
    npx http-server
    ```
 
-3. Open [http://localhost:8080](http://localhost:8080) in your browser. Port 8080 may not
+4. Open [http://localhost:8080](http://localhost:8080) in your browser. Port 8080 may not
    be the default in your setup but use the port that is indicated.
-4. Use the navigation bar to visit the About, Resume, and Travel pages. On the Travel page, open the trip dropdown and select a destination to start its countdown clock.
-5. Stop the server with `Ctrl+C` when you are finished.
+5. Use the navigation bar to visit the About, Resume, and Travel pages. On the Travel page, open the trip dropdown and select a destination to start its countdown clock.
+6. Stop the server with `Ctrl+C` when you are finished.
 
 ## Author
 
@@ -84,7 +138,11 @@ Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
 
 "Three pictures from the Dolomites section of travel.html are not displaying in GitHub Pages. Can you tell me why? Do not make any changes!"
 
-3. **Troubleshooting div Expansion with Javascript** I asked **Claude Sonnet 5** to help me troubleshoot a style issue. When my countdown clock appeared after selecting from the menu, it would push the surrounding div's spacing down. I wanted to figure out how to correct that. I used the following prompt.
+3. **Starting a Project README.md** I used **GitHub Copilot SDK** to get this README started. I did a lot of editing afterward though to get it to have the correct content. The prompt I used is as follows.
+
+"I want you to help me get started with the README for this project. Only modify the README.md file and nothing else. The README should have the following elements: project name, project objective, screenshot (in img folder currently), tech requirements, how to install/use, author with a link to the homepage (not public yet so I will add the link later), a reference to the class with a link (https://johnguerra.co/classes/webDevelopment_online_fall_2026/), a link to the video demo (not created yet so just have a placeholder), and what the creative addition to the project was (the trip countdown clock that I created from Javascript). Do all of this in correct GitHub Markdown."
+
+4. **Troubleshooting div Expansion with Javascript** I asked **Claude Sonnet 5** to help me troubleshoot a style issue. When my countdown clock appeared after selecting from the menu, it would push the surrounding div's spacing down. I wanted to figure out how to correct that. I used the following prompt.
 
 "How can I make it so when the text from the dropdown appears via Javascript, the rest of the box doesn't shift? I'm fine with having blank space to start. Tell me how to do it. Do not write a solution. I want to learn how to do it myself."
 
