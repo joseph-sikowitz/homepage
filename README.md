@@ -53,6 +53,8 @@ Northeastern University, [Web Development (Online), Fall 2026](https://johnguerr
 
 Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
 
+## Generative AI Usage
+
 ## Video Demo
 
 [Video demo coming soon](#)
