@@ -26,16 +26,16 @@ https://joseph-sikowitz.github.io/homepage/
 ## Screenshots
 
 ![Screenshot of the homepage](./img/homepage-screenshot.gif)
-*Homepage*
+_Homepage_
 
 ![Screenshot of the about page](./img/about-screenshot.gif)
-*About*
+_About_
 
 ![Screenshot of the resume page](./img/resume-screenshot.gif)
-*Resume*
+_Resume_
 
 ![Screenshot of the homepage](./img/travel-screenshot.gif)
-*Travel*
+_Travel_
 
 ## Technologies and Requirements
 
@@ -164,4 +164,4 @@ Joseph Sikowitz — [Homepage](https://joseph-sikowitz.github.io/homepage/)
 
 ## License
 
-This project is licensed under the [MIT License](#license)---see the LICENSE file for details.
+This project is licensed under the [MIT License](./LICENSE)---see the LICENSE file for details.
