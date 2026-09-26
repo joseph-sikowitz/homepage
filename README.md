@@ -10,6 +10,10 @@ A personal homepage to share my professional background and personal interests. 
 
 **Additional:** Other creative elements in this project include the image hover text that shows my personal story and the Bootstrap carousel on the Travel page that shows my recent trips.
 
+## Deployment URL
+
+https://joseph-sikowitz.github.io/homepage/
+
 ## Screenshot
 
 ![Screenshot of the homepage](./img/homepage-screenshot.gif)
