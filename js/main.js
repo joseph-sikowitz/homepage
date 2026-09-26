@@ -100,7 +100,7 @@ function runCountDownClock() {
 
       //clear current text and set new trip value
       document.getElementById("countdownclock").innerHTML = "";
-      const trip = event.target.getAttribute("value");
+      const trip = event.currentTarget.dataset.trip;
 
       //create and start new interval for clock, updating every second
       countdownInterval = setInterval(() => {
