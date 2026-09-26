@@ -4,7 +4,7 @@
 
 A personal homepage to share my professional background and personal interests. The site includes an introduction, an about page, a resume, and travel photos and information.
 
-## Creative Addition
+## Creative Additions
 
 **Primary:** The Travel page includes a trip countdown clock built with JavaScript. Selecting a destination starts a live countdown showing the time remaining until departure.
 
@@ -55,7 +55,9 @@ Instructor: [John Alexis Guerra Gómez](https://johnguerra.co/).
 
 ## Generative AI Usage
 
-## Video Demo
+## Documentation and Demos
+
+- [Design Document](/docs/design-document.pdf)
 
 [Video demo coming soon](#)
 
