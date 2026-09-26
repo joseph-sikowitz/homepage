@@ -83,6 +83,10 @@ span.name-text {
 }
 
 /* travel */
+h2.travel-intro {
+  font-size: 1.5em;
+}
+
 .travel-title {
   text-align: center;
 }
