@@ -41,6 +41,9 @@ function calculateTimeToTrip(trip) {
   let tripInfo = getTrip(trip);
 
   //calculate difference
+  // Chunzhang Review: Could we check whether the departure time has passed before
+  // using Math.abs()? The absolute value keeps days non-negative,
+  // so the "days < 0" message below cannot currently be reached.
   let seconds = Math.abs(tripInfo[0] - datetime) / 1000;
 
   //isolate number of days
@@ -94,6 +97,9 @@ function runCountDownClock() {
       event.preventDefault();
 
       //clear interval var if present
+      // Chunzhang Review: Nice handling of the previous interval here.
+      // This prevents multiple timers from updating the same countdown
+      // when a visitor switches between trips.
       if (countdownInterval !== null) {
         clearInterval(countdownInterval);
       }
@@ -103,6 +109,9 @@ function runCountDownClock() {
       const trip = event.currentTarget.dataset.trip;
 
       //create and start new interval for clock, updating every second
+      // Chunzhang Review: A small usability suggestion: update the countdown once
+      // before starting the interval, so visitors see a result immediately
+      // instead of waiting one second after selecting a trip.
       countdownInterval = setInterval(() => {
         const timeToTrip = calculateTimeToTrip(trip);
         document.getElementById("countdownclock").innerHTML = timeToTrip;
