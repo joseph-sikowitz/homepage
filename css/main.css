@@ -74,6 +74,9 @@ span.name-text {
   text-align: center;
 }
 
+/* Chunzhang Review: The photo-and-story interaction is a nice personal touch.
+   Could we also provide a keyboard-accessible way to reveal the text?
+   The current cards are not focusable, and the reveal relies on hover. */
 .about-card:hover .about-txt {
   opacity: 1;
 }
